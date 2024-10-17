@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Diwali</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Diwali!</title>
+    <style>
+        body {
+            background-color: #ffeb3b; /* Bright yellow background */
+            color: #4a148c; /* Dark purple text */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .lamp {
+            width: 100px;
+            height: 100px;
+            background-color: #ff5722; /* Bright orange color for the lamp */
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+        }
+        .flame {
+            width: 30px;
+            height: 30px;
+            background-color: #ffeb3b; /* Yellow flame */
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            left: 35px;
+            animation: flicker 1s infinite;
+        }
+        @keyframes flicker {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Happy Diwali!</h1>
-        <p>Wishing you a festival filled with joy and prosperity.</p>
-    </header>
-    <main>
-        <section>
-            <h2>About Diwali</h2>
-            <p>Diwali, also known as the Festival of Lights, is celebrated by millions across the world. It signifies the victory of light over darkness and good over evil.</p>
-        </section>
-        <section>
-            <h2>Festive Traditions</h2>
-            <ul>
-                <li>Lighting Diyas</li>
-                <li>Fireworks</li>
-                <li>Exchanging Sweets</li>
-                <li>Family Gatherings</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Share Your Wishes</h2>
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Wishes</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Happy Diwali. All rights reserved.</p>
-    </footer>
+    <h1>Happy Diwali!</h1>
+    <div class="lamp">
+        <div class="flame"></div>
+    </div>
+    <p>May the festival of lights bring joy, prosperity, and happiness to your life.</p>
+    <p>Wishing you and your family a very Happy Diwali!</p>
 </body>
 </html>
