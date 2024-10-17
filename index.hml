@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Diwali!</h1>
+        <p>Wishing you a festival filled with joy and prosperity.</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Diwali</h2>
+            <p>Diwali, also known as the Festival of Lights, is celebrated by millions across the world. It signifies the victory of light over darkness and good over evil.</p>
+        </section>
+        <section>
+            <h2>Festive Traditions</h2>
+            <ul>
+                <li>Lighting Diyas</li>
+                <li>Fireworks</li>
+                <li>Exchanging Sweets</li>
+                <li>Family Gatherings</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Share Your Wishes</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Wishes</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Happy Diwali. All rights reserved.</p>
+    </footer>
+</body>
+</html>
